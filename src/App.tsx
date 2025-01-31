@@ -19,7 +19,7 @@ export default function App() {
           <HashRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route index element={<Panel />} />
+                <Route index element={<Connect />} />
                 <Route path="panel" element={<Panel />} />
                 <Route path="connect" element={<Connect />} />
                 <Route path="speakers" element={<Speakers />} />
