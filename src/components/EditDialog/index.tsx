@@ -70,12 +70,7 @@ export default function ManageDialog({ obj, onClose }: Props) {
           <PositionLocate data={data.right} type="right" onSetPosition={onSetPosition} />
         </div>
         <DialogFooter>
-          <Button
-            disabled={
-              data.left === undefined || data.center === undefined || data.right === undefined || data.name === ""
-            }
-            onClick={() => onSubmitMutation.mutate()}
-          >
+          <Button disabled={data.name === ""} onClick={() => onSubmitMutation.mutate()}>
             儲存
           </Button>
         </DialogFooter>
